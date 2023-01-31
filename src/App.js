@@ -1,4 +1,5 @@
 import "./index.css"
+import "./script.js"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div className="float-right mr-24 space-x-6 text-grey my-auto underline">
           <a className="text-dark-green" href="main.html">Main</a>
           <a className="hover:text-dark-green" href="about.html">About</a>
-          <a className="hover:text-dark-green" href="feedback.html">Get in touch</a>
+          <a className="hover:text-dark-green" href="new.html">What's New</a>
         </div>
         </div>
         </div>
@@ -19,13 +20,17 @@ function App() {
 
       <body>
         <div className="content">
-
+          <div className="widget">
+            <div id="weather" className="bg-grey rounded-[10px] p-[20px] m-auto relative top-[230px] max-w-[450px] shadow-md shadow-grey">
+            </div>
+          </div>
+          <script src="./script.js"></script>
         </div>
       </body>
 
       <footer>
         <div className="footer">
-          <p className="ml-24 pt-5 text-base text-grey">&copy; 2022 WeatherApp. All Rigths Reserved.</p>
+          <p className="ml-24 pt-5 text-base text-grey">&copy; 2023 WeatherApp. All Rigths Reserved.</p>
         </div>
       </footer>
     </div>
