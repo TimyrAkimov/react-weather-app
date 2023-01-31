@@ -1,3 +1,39 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+window.addEventListener("load", (event) => {
+  $.getJSON('https://json.geoiplookup.io/api?callback=?',  function getIP(data) {
+  const ip = data.ip;
+  const result = getCity(ip);
+  console.log(result);
+  });
+  });
+
+  async function getCity(ip){
+var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=";
+var token = "a739dea47596afd88fb7f0d58e7bb84eb27a6e04";
+var query = "176.101.14.135"
+console.log(query);
+
+var options = {
+    method: "GET",
+    mode: "cors",
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Authorization": "Token " + token
+    }
+}
+
+const perem = "";
+fetch(url + query, options)
+.then(response => response.text())
+.then(result => {console.log(result);perem=result})
+.catch(error => console.log("error", error));
+  
+
+const location = perem.city;
+
+return location;
+};

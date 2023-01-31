@@ -20,10 +20,9 @@ function App() {
 
       <body>
         <div className="content">
-          <div id="menu" className="fixed z-99 left-0 top-[220px] h-[60vh] w-[25%] align-center justify-between bg-dark-black duration-500 -translate-x-full">
-          <a href="#" id="menu-btn"><img className="w-[30px] h-[30px] absolute top-[75px] -right-[125px]" src="/images/menu.png"></img></a>
-          <h3 className="mt-4 ml-4 font-semibold text-[28px] text-grey">Show weather in:</h3>
-          <form id="form" action="" className="justify-around align-center mt-4 ml-4">
+          <div id="menu" className="absolute z-99 left-0 top-[240px] h-[60vh] w-[29%] align-center justify-between bg-dark-black duration-500">
+            <h3 className="mt-4 ml-24 font-semibold text-[28px] text-grey">Show weather in:</h3>
+            <form id="form" action="" className="justify-around align-center mt-4 ml-24">
             <input className="h-[30px] w-[250px] rounded-[10px] border-2 border-grey p-3 text-grey bg-transparent" name="city" type="text" placeholder="Enter a city"></input>
             <button className="h-[30px] w-[75px] rounded-[10px] bg-black text-white ml-4 bg-transparent text-grey border-2 border-grey" type="submit">Submit</button>
           </form>
