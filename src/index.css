@@ -46,6 +46,14 @@ code {
   background: #000000;
 }
 
+.menu_active{
+  transform: translateX(0%);
+}
+
+.weather_active{
+  transform: translateX(0%);
+}
+
 #weather_header{
   display: flex;
 }
