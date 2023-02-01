@@ -33,13 +33,6 @@ code {
   background: #000000;
 }
 
-.content{
-  background: url(/react-weather-app/images/background.jpg);
-  background-size: contain;
-  width: 100%;
-  height: 900px;
-}
-
 .footer{
   width: 100%;
   height: 60px;
