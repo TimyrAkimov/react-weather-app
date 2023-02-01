@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-weather-app/static/css/main.ebb00bd0.css",
+    "main.js": "/react-weather-app/static/js/main.3f00c185.js",
+    "static/media/Raleway-Medium.ttf": "/react-weather-app/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
+    "static/media/background.jpg": "/react-weather-app/static/media/background.642055a9c0ea7355f2b7.jpg",
+    "index.html": "/react-weather-app/index.html",
+    "main.ebb00bd0.css.map": "/react-weather-app/static/css/main.ebb00bd0.css.map",
+    "main.3f00c185.js.map": "/react-weather-app/static/js/main.3f00c185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebb00bd0.css",
+    "static/js/main.3f00c185.js"
+  ]
+}
