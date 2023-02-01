@@ -21,11 +21,13 @@ async function loadWeather(city){
     } else {
         weatherBlock.innerHTML = responseResult.message;
     }
+    console.log(city);
 }
 
 function getWeather(data){
 
     const location = data.name;
+    console.log(location);
     const temp = Math.round(data.main.temp);
     const feelsLike = Math.round(data.main.feels_like);
     const weatherStatus = data.weather[0].main;
@@ -53,5 +55,6 @@ if(weatherBlock){
   e.preventDefault();
   const formData = new FormData(formElement);
   var city = formData.get('city');
+  console.log(city);    
   loadWeather(city);
 })};
