@@ -10,7 +10,7 @@ window.addEventListener("load", (event) => {
   });
   });
 
-  async function getCity(ip){
+async function getCity(ip){
 var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=";
 var token = "a739dea47596afd88fb7f0d58e7bb84eb27a6e04";
 var query = "176.101.14.135"
